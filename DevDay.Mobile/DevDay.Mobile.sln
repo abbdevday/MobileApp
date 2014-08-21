@@ -13,6 +13,9 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "DevDay.Mobile", "DevDay.Mob
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		DevDay.Mobile\DevDay.Mobile\DevDay.Mobile.projitems*{17ffe384-e7b4-4a63-a6db-73523db3e230}*SharedItemsImports = 4
+		DevDay.Mobile\DevDay.Mobile\DevDay.Mobile.projitems*{1f171946-c92b-412d-930b-7718d7e69d93}*SharedItemsImports = 4
+		DevDay.Mobile\DevDay.Mobile\DevDay.Mobile.projitems*{6dddcb81-5b06-4fa1-9c5f-e9ae9a213a03}*SharedItemsImports = 4
 		DevDay.Mobile\DevDay.Mobile\DevDay.Mobile.projitems*{10333ee5-7364-45b4-b711-3fabadd850fa}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -78,10 +78,20 @@
     <None Include="Assets\AboutAssets.txt" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\Drawable\Icon.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Properties\AndroidManifest.xml" />
+    <AndroidResource Include="Resources\Drawable\rob.png" />
+    <AndroidResource Include="Resources\Drawable\ben.png" />
+    <AndroidResource Include="Resources\Drawable\dan.png" />
+    <AndroidResource Include="Resources\Drawable\enrico.png" />
+    <AndroidResource Include="Resources\Drawable\karl.png" />
+    <AndroidResource Include="Resources\Drawable\kasia.png" />
+    <AndroidResource Include="Resources\Drawable\niall.png" />
+    <AndroidResource Include="Resources\Drawable\paul.png" />
+    <AndroidResource Include="Resources\Drawable\peter.png" />
+    <AndroidResource Include="Resources\Drawable\qi.png" />
+    <AndroidResource Include="Resources\Drawable\seb.png" />
+    <AndroidResource Include="Resources\Drawable\simon.png" />
+    <AndroidResource Include="Resources\Drawable\ic_launcher.png" />
   </ItemGroup>
   <Import Project="..\DevDay.Mobile\DevDay.Mobile.projitems" Label="Shared" Condition="Exists('..\DevDay.Mobile\DevDay.Mobile.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

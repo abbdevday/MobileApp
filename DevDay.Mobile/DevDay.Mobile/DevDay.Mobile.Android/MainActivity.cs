@@ -2,6 +2,7 @@
 
 using Android.App;
 using Android.Content;
+using Android.Content.PM;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
@@ -11,7 +12,7 @@ using Xamarin.Forms.Platform.Android;
 
 namespace DevDay.Mobile.Droid
 {
-    [Activity(Label = "DevDay.Mobile", MainLauncher = true)]
+    [Activity(Label = "DevDay 2014", MainLauncher = true, ScreenOrientation = ScreenOrientation.Portrait)]
     public class MainActivity : AndroidActivity
     {
         protected override void OnCreate(Bundle bundle)

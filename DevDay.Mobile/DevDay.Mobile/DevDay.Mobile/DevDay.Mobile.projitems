@@ -9,7 +9,15 @@
     <Import_RootNamespace>DevDay.Mobile</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)CellTemplates\AgendaCell.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CellTemplates\SessionCell.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CellTemplates\SpeakerCell.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataSources\SessionRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTO\AgendaItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTO\Session.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SessionPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SpeakerPage.cs" />
   </ItemGroup>
 </Project>

@@ -7,11 +7,11 @@ using Xamarin.Forms;
 
 namespace DevDay.Mobile
 {
-	public class App
-	{
-		public static Page GetMainPage()
-		{
-            return new MainPage();
-		}
-	}
+    public class App
+    {
+        public static Page GetMainPage()
+        {
+            return new NavigationPage(new MainPage());
+        }
+    }
 }

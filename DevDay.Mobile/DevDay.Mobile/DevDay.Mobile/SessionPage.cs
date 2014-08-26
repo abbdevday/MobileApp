@@ -19,8 +19,10 @@ namespace DevDay.Mobile
 
             var stack = new StackLayout
             {
-                Padding = new Thickness(10)
+                Padding = new Thickness(5)
             };
+
+            var scroll = new ScrollView { Content = stack };
 
             var title = new Label
             {
@@ -39,18 +41,13 @@ namespace DevDay.Mobile
             };
             stack.Children.Add(timeslot);
 
-            var scroll = new ScrollView();
-            var scrolledStack = new StackLayout();
-            scroll.Content = scrolledStack;
-            stack.Children.Add(scroll);
-            
-            scrolledStack.Children.Add(new Label
+            stack.Children.Add(new Label
             {
                 Text = session.Description,
                 Font = Font.SystemFontOfSize(16)
             });
 
-            scrolledStack.Children.Add(new Label
+            stack.Children.Add(new Label
             {
                 Text = "SPEAKER",
                 TextColor = Utils.DevDayGreen,
@@ -68,9 +65,9 @@ namespace DevDay.Mobile
                 speaker.SelectedItem = "";
                 Navigation.PushAsync(new SpeakerPage(e.Item as Session));
             };
-            scrolledStack.Children.Add(speaker);
+            stack.Children.Add(speaker);
 
-            Content = stack;
+            Content = scroll;
         }
     }
 }

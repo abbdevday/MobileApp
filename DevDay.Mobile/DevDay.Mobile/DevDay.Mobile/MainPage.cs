@@ -15,6 +15,8 @@ namespace DevDay.Mobile
             Children.Add(getAgendaTab());
             Children.Add(getSpeakersTab());
             Children.Add(getAboutTab());
+
+            Padding = new Thickness(5);
         }
 
         private ContentPage getAgendaTab()
@@ -22,7 +24,6 @@ namespace DevDay.Mobile
             var agendaTab = new ContentPage
             {
                 Title = "AGENDA",
-                //BackgroundColor = Utils.DevDayWhite
             };
 
             var agenda = new ListView
@@ -49,7 +50,6 @@ namespace DevDay.Mobile
             var speakersTab = new ContentPage
             {
                 Title = "SPEAKERS",
-                //BackgroundColor = Utils.DevDayWhite
             };
 
             var speakers = new ListView
@@ -74,7 +74,6 @@ namespace DevDay.Mobile
             var aboutTab = new ContentPage
             {
                 Title = "ABOUT US",
-                //BackgroundColor = Utils.DevDayWhite
             };
             var label = new Label { Text = "DevDay 2014 - 26th of September 2014, Kraków" };
             aboutTab.Content = label;

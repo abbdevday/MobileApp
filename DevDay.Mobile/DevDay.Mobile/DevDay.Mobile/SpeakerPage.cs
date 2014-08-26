@@ -17,11 +17,13 @@ namespace DevDay.Mobile
                 Title = "DevDay 2014";
             #endif
 
-            var stack = new StackLayout()
+            var stack = new StackLayout
             {
-                Padding = new Thickness(10)
+                Padding = new Thickness(5)
             };
-            
+
+            var scroll = new ScrollView { Content = stack };
+
             stack.Children.Add(new Label
             {
                 Text = session.Speaker, 
@@ -36,26 +38,21 @@ namespace DevDay.Mobile
                 Font = Font.SystemFontOfSize(12), 
                 XAlign = TextAlignment.Center
             });
-
-            var scroll = new ScrollView();
-            var scrolledStack = new StackLayout();
-            scroll.Content = scrolledStack;
-            stack.Children.Add(scroll);
             
             var img = new Image
             {
                 Aspect = Aspect.AspectFit,
                 Source = ImageSource.FromFile(session.Image)
             };
-            scrolledStack.Children.Add(img);
+            stack.Children.Add(img);
 
-            scrolledStack.Children.Add(new Label()
+            stack.Children.Add(new Label()
             {
                 Text = session.Bio,
                 Font = Font.SystemFontOfSize(16)
             });
 
-            scrolledStack.Children.Add(new Label
+            stack.Children.Add(new Label
             {
                 Text = "SESSION",
                 TextColor = Utils.DevDayGreen,
@@ -73,9 +70,9 @@ namespace DevDay.Mobile
                 sessionList.SelectedItem = "";
                 Navigation.PushAsync(new SessionPage(e.Item as Session));
             };
-            scrolledStack.Children.Add(sessionList);
+            stack.Children.Add(sessionList);
 
-            Content = stack;
+            Content = scroll;
         }
     }
 }

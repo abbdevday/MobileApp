@@ -19,11 +19,10 @@ namespace DevDay.Mobile
 
         private ContentPage getAgendaTab()
         {
-            var agendaTab = new ContentPage { Title = "AGENDA" };
-
-            var stack = new StackLayout
+            var agendaTab = new ContentPage
             {
-                Padding = new Thickness(10)
+                Title = "AGENDA",
+                //BackgroundColor = Utils.DevDayWhite
             };
 
             var agenda = new ListView
@@ -40,19 +39,17 @@ namespace DevDay.Mobile
                 Navigation.PushAsync(new SessionPage(agendaItem.Session));
             };
 
-            stack.Children.Add(agenda);
-            agendaTab.Content = stack;
+            agendaTab.Content = agenda;
 
             return agendaTab;
         }
 
         private ContentPage getSpeakersTab()
         {
-            var speakersTab = new ContentPage { Title = "SPEAKERS" };
-
-            var stack = new StackLayout
+            var speakersTab = new ContentPage
             {
-                Padding = new Thickness(10)
+                Title = "SPEAKERS",
+                //BackgroundColor = Utils.DevDayWhite
             };
 
             var speakers = new ListView
@@ -67,15 +64,18 @@ namespace DevDay.Mobile
                 Navigation.PushAsync(new SpeakerPage(e.Item as Session));
             };
 
-            stack.Children.Add(speakers);
-            speakersTab.Content = stack;
+            speakersTab.Content = speakers;
 
             return speakersTab;
         }
 
         private ContentPage getAboutTab()
         {
-            var aboutTab = new ContentPage { Title = "ABOUT US" };
+            var aboutTab = new ContentPage
+            {
+                Title = "ABOUT US",
+                //BackgroundColor = Utils.DevDayWhite
+            };
             var label = new Label { Text = "DevDay 2014 - 26th of September 2014, Kraków" };
             aboutTab.Content = label;
             return aboutTab;

@@ -11,7 +11,11 @@ namespace DevDay.Mobile
     {
         public SessionPage(Session session)
         {
-            Title = "DevDay 2014";
+            Title = "Session";
+
+            #if __ANDROID__
+                Title = "DevDay 2014";
+            #endif
 
             var stack = new StackLayout
             {
@@ -21,7 +25,7 @@ namespace DevDay.Mobile
             var title = new Label
             {
                 Text = session.Title,
-                TextColor = Color.Aqua,
+                TextColor = Utils.DevDayGreen,
                 Font = Font.BoldSystemFontOfSize(30),
                 HorizontalOptions = LayoutOptions.Center
             };
@@ -49,7 +53,7 @@ namespace DevDay.Mobile
             scrolledStack.Children.Add(new Label
             {
                 Text = "SPEAKER",
-                TextColor = Color.Aqua,
+                TextColor = Utils.DevDayGreen,
                 HorizontalOptions = LayoutOptions.Start,
                 Font = Font.BoldSystemFontOfSize(20)
             });

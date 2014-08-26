@@ -19,5 +19,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SessionPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SpeakerPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils.cs" />
   </ItemGroup>
 </Project>

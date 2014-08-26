@@ -13,7 +13,7 @@ namespace DevDay.Mobile.CellTemplates
             {
                 Font = Font.BoldSystemFontOfSize(20)
             };
-            session.SetBinding(Label.TextProperty, "Session.Title");
+            session.SetBinding(Label.TextProperty, "Title");
 
             View = session;
         }

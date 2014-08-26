@@ -22,7 +22,7 @@ namespace DevDay.Mobile.CellTemplates
                 VerticalOptions = LayoutOptions.Center,
                 MinimumHeightRequest = 100
             };
-            speaker.SetBinding(Label.TextProperty, "Session.Speaker");
+            speaker.SetBinding(Label.TextProperty, "Speaker");
 
             View = new StackLayout()
             {

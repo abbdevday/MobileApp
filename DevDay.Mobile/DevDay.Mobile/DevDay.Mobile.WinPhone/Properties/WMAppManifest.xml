@@ -1,38 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
-  <DefaultLanguage xmlns="" code="en-US"/>
-  <App xmlns="" ProductID="15003bbd-f6aa-42c1-a6f0-6fe1f3f6518d" Title="DevDay.Mobile.WinPhone" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal"  Author="DevDay.Mobile.WinPhone author" Description="Sample description" Publisher="DevDay.Mobile.WinPhone" PublisherID="16c3c322-4e62-42e1-9a79-c40cd20e6cba">
-    <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
+  <DefaultLanguage xmlns="" code="en-US" />
+  <App xmlns="" ProductID="{15003bbd-f6aa-42c1-a6f0-6fe1f3f6518d}" Title="DevDay 2014" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="DevDay" Description="DevDay (formerly known as ABB Dev Day) is a conference that takes place in Kraków, Poland. It is mainly targeted for developers and architects, and being developers ourselves we want to provide the ultimate experience." Publisher="DevDay" PublisherID="{16c3c322-4e62-42e1-9a79-c40cd20e6cba}">
+    <IconPath IsRelative="true" IsResource="false">small_icon.png</IconPath>
     <Capabilities>
-      <Capability Name="ID_CAP_NETWORKING"/>
-      <Capability Name="ID_CAP_MEDIALIB_AUDIO"/>
-      <Capability Name="ID_CAP_MEDIALIB_PLAYBACK"/>
-      <Capability Name="ID_CAP_SENSORS"/>
-      <Capability Name="ID_CAP_WEBBROWSERCOMPONENT"/>
+      <Capability Name="ID_CAP_NETWORKING" />
+      <Capability Name="ID_CAP_MEDIALIB_AUDIO" />
+      <Capability Name="ID_CAP_MEDIALIB_PLAYBACK" />
+      <Capability Name="ID_CAP_SENSORS" />
+      <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
     </Capabilities>
     <Tasks>
-      <DefaultTask  Name ="_default" NavigationPage="MainPage.xaml"/>
+      <DefaultTask Name="_default" NavigationPage="MainPage.xaml" />
     </Tasks>
     <Tokens>
       <PrimaryToken TokenID="PhoneApp1Token" TaskName="_default">
         <TemplateFlip>
-          <SmallImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileSmall.png</SmallImageURI>
+          <SmallImageURI IsRelative="true" IsResource="false">small_icon.png</SmallImageURI>
           <Count>0</Count>
-          <BackgroundImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMedium.png</BackgroundImageURI>
-          <Title>DevDay.Mobile.WinPhone</Title>
-          <BackContent></BackContent>
-          <BackBackgroundImageURI></BackBackgroundImageURI>
-          <BackTitle></BackTitle>
-          <DeviceLockImageURI></DeviceLockImageURI>
-          <HasLarge></HasLarge>
+          <BackgroundImageURI IsRelative="true" IsResource="false">small_icon.png</BackgroundImageURI>
+          <Title>
+          </Title>
+          <BackContent>
+          </BackContent>
+          <BackBackgroundImageURI IsRelative="true" IsResource="false">
+          </BackBackgroundImageURI>
+          <BackTitle>
+          </BackTitle>
+          <DeviceLockImageURI IsRelative="true" IsResource="false">
+          </DeviceLockImageURI>
+          <HasLarge>False</HasLarge>
         </TemplateFlip>
       </PrimaryToken>
     </Tokens>
     <ScreenResolutions>
-      <ScreenResolution Name="ID_RESOLUTION_WVGA"/>
-      <ScreenResolution Name="ID_RESOLUTION_WXGA"/>
-      <ScreenResolution Name="ID_RESOLUTION_HD720P"/>
+      <ScreenResolution Name="ID_RESOLUTION_WVGA" />
+      <ScreenResolution Name="ID_RESOLUTION_WXGA" />
+      <ScreenResolution Name="ID_RESOLUTION_HD720P" />
     </ScreenResolutions>
   </App>
 </Deployment>

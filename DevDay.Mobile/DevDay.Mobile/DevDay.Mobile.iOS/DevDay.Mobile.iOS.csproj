@@ -10,7 +10,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>DevDay.Mobile.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>DevDay.Mobile.iOS</AssemblyName>
+    <AssemblyName>DevDay2014</AssemblyName>
     <NuGetPackageImportStamp>a1066a52</NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
@@ -107,6 +107,45 @@
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>..\..\packages\Xamarin.Forms.1.0.6186\lib\MonoTouch10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ben.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\dan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\enrico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_launcher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\karl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\kasia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\niall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\paul.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\peter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\qi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\rob.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\seb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\simon.png" />
   </ItemGroup>
   <Import Project="..\DevDay.Mobile\DevDay.Mobile.projitems" Label="Shared" Condition="Exists('..\DevDay.Mobile\DevDay.Mobile.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
